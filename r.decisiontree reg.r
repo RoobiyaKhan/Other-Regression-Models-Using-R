@@ -14,7 +14,7 @@ dataset = dataset[2:3]
 
 # Feature Scaling                      #no need feature scaling as decision trees reg based on conditions and 
                                       #independent variables and not on euclidean distances
-# training_set = scale(training_set)  #usually machine learning models uses euclidean dist(all indep var on same scale)-so feature scaling needed
+# training_set = scale(training_set)  
 # test_set = scale(test_set)
 
 # Fitting the DecisionTree Regression to the dataset
