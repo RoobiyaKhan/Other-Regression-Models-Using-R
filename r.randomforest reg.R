@@ -27,19 +27,6 @@ regressor = randomForest(x = dataset[1],#this x syntax creates a sub dataframe(i
 # Predicting a new result
 y_pred = predict(regressor, data.frame(Level = 6.5))
 
-# Visualising the Random Forest Regression results #not useful bcoz its non-continuous model,so need higher 
-                                                   #resolution to visualize
-# install.packages('ggplot2')
-# library(ggplot2)
-# ggplot() +
-#   geom_point(aes(x = dataset$Level, y = dataset$Salary),
-#              colour = 'red') +
-#   geom_line(aes(x = dataset$Level, y = predict(regressor, newdata = dataset)),
-#             colour = 'blue') +
-#   ggtitle('Truth or Bluff (Regression Model)') +
-#   xlab('Level') +
-#   ylab('Salary')
-
 # Visualising the Random Forest Regression results (for higher resolution and smoother curve)
 # install.packages('ggplot2')
 library(ggplot2)
